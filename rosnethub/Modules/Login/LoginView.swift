@@ -46,24 +46,16 @@ final class LoginView: BaseView {
         return view
     }()
     
-    private let fieldsHeight = 48.0
-    
-    private(set) lazy var loginField: TextFieldWithInsets = {
+    let loginField: TextFieldWithInsets = {
         let view = TextFieldWithInsets()
         view.placeholder = "Логин"
-        view.snp.makeConstraints { (make) in
-            make.height.equalTo(fieldsHeight)
-        }
         return view
     }()
     
-    private(set) lazy var passwordField: TextFieldWithInsets = {
+    let passwordField: TextFieldWithInsets = {
         let view = TextFieldWithInsets()
         view.placeholder = "Пароль"
         view.isSecureTextEntry = true
-        view.snp.makeConstraints { (make) in
-            make.height.equalTo(fieldsHeight)
-        }
         return view
     }()
     

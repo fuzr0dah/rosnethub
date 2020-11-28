@@ -12,4 +12,5 @@ struct Statement: Codable {
     let author: User
     let projectDescription: String
     let createdAt: Int
+    let upvotes: Int
 }

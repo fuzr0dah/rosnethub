@@ -44,6 +44,14 @@
 		F4C36233257214330069C46A /* GothamPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4C3622F257214330069C46A /* GothamPro-Light.ttf */; };
 		F4C3623D257217DE0069C46A /* GothamPro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4C3623C257217DE0069C46A /* GothamPro.ttf */; };
 		F4C36241257231490069C46A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F4C36240257231490069C46A /* .gitignore */; };
+		F4C36247257232F20069C46A /* AddStatementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C36246257232F20069C46A /* AddStatementViewModel.swift */; };
+		F4C3624A257232FE0069C46A /* AddStatementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C36249257232FE0069C46A /* AddStatementView.swift */; };
+		F4C3624D257233110069C46A /* AddStatementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3624C257233110069C46A /* AddStatementViewController.swift */; };
+		F4C36253257234050069C46A /* StatementDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C36252257234050069C46A /* StatementDetailViewController.swift */; };
+		F4C36256257234180069C46A /* StatementDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C36255257234180069C46A /* StatementDetailView.swift */; };
+		F4C3625A257234770069C46A /* StatementDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C36259257234770069C46A /* StatementDetailViewModel.swift */; };
+		F4C3625E25723B3D0069C46A /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3625D25723B3D0069C46A /* RoundedTextField.swift */; };
+		F4C3626325723DCA0069C46A /* RoundedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3626225723DCA0069C46A /* RoundedTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +96,14 @@
 		F4C3622F257214330069C46A /* GothamPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Light.ttf"; sourceTree = "<group>"; };
 		F4C3623C257217DE0069C46A /* GothamPro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamPro.ttf; sourceTree = "<group>"; };
 		F4C36240257231490069C46A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F4C36246257232F20069C46A /* AddStatementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStatementViewModel.swift; sourceTree = "<group>"; };
+		F4C36249257232FE0069C46A /* AddStatementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStatementView.swift; sourceTree = "<group>"; };
+		F4C3624C257233110069C46A /* AddStatementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStatementViewController.swift; sourceTree = "<group>"; };
+		F4C36252257234050069C46A /* StatementDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementDetailViewController.swift; sourceTree = "<group>"; };
+		F4C36255257234180069C46A /* StatementDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementDetailView.swift; sourceTree = "<group>"; };
+		F4C36259257234770069C46A /* StatementDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementDetailViewModel.swift; sourceTree = "<group>"; };
+		F4C3625D25723B3D0069C46A /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		F4C3626225723DCA0069C46A /* RoundedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +229,8 @@
 				F44B8FC7257203BE00CFA4D7 /* Login */,
 				F40C8BF52571717C00324BA2 /* HomeTabBar */,
 				F40C8BF62571719000324BA2 /* StatementList */,
+				F4C36244257232BF0069C46A /* AddStatement */,
+				F4C362432572329F0069C46A /* StatementDetail */,
 				F44B8FB72571B42300CFA4D7 /* Profile */,
 			);
 			path = Modules;
@@ -221,6 +239,8 @@
 		F40C8BF22571715600324BA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F4C3626125723DB00069C46A /* RoundedTextView */,
+				F4C3625C25723B210069C46A /* RoundedTextField */,
 				F44B8FD525720DDD00CFA4D7 /* TextFieldWithInsets */,
 			);
 			path = View;
@@ -323,6 +343,42 @@
 				F44B8FD225720D4400CFA4D7 /* TextFieldWithInsets.swift */,
 			);
 			path = TextFieldWithInsets;
+			sourceTree = "<group>";
+		};
+		F4C362432572329F0069C46A /* StatementDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F4C36252257234050069C46A /* StatementDetailViewController.swift */,
+				F4C36255257234180069C46A /* StatementDetailView.swift */,
+				F4C36259257234770069C46A /* StatementDetailViewModel.swift */,
+			);
+			path = StatementDetail;
+			sourceTree = "<group>";
+		};
+		F4C36244257232BF0069C46A /* AddStatement */ = {
+			isa = PBXGroup;
+			children = (
+				F4C3624C257233110069C46A /* AddStatementViewController.swift */,
+				F4C36249257232FE0069C46A /* AddStatementView.swift */,
+				F4C36246257232F20069C46A /* AddStatementViewModel.swift */,
+			);
+			path = AddStatement;
+			sourceTree = "<group>";
+		};
+		F4C3625C25723B210069C46A /* RoundedTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F4C3625D25723B3D0069C46A /* RoundedTextField.swift */,
+			);
+			path = RoundedTextField;
+			sourceTree = "<group>";
+		};
+		F4C3626125723DB00069C46A /* RoundedTextView */ = {
+			isa = PBXGroup;
+			children = (
+				F4C3626225723DCA0069C46A /* RoundedTextView.swift */,
+			);
+			path = RoundedTextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,6 +506,9 @@
 				F40C8BF82571738900324BA2 /* BaseViewController.swift in Sources */,
 				F40C8C3225717D3A00324BA2 /* StatementListCell.swift in Sources */,
 				F40C8C2E25717C9A00324BA2 /* BaseCellViewModel.swift in Sources */,
+				F4C3625E25723B3D0069C46A /* RoundedTextField.swift in Sources */,
+				F4C3624A257232FE0069C46A /* AddStatementView.swift in Sources */,
+				F4C3626325723DCA0069C46A /* RoundedTextView.swift in Sources */,
 				F44B8FBD2571B48F00CFA4D7 /* ProfileViewModel.swift in Sources */,
 				F40C8C122571742F00324BA2 /* BaseViewModel.swift in Sources */,
 				F44B8FB42571A43800CFA4D7 /* Int+Extensions.swift in Sources */,
@@ -458,6 +517,7 @@
 				F40C8C2525717B8800324BA2 /* StatementListViewController.swift in Sources */,
 				F40C8C452571802D00324BA2 /* NetworkManager.swift in Sources */,
 				F40C8C3625717D5C00324BA2 /* StatementListCellViewModel.swift in Sources */,
+				F4C3624D257233110069C46A /* AddStatementViewController.swift in Sources */,
 				F44B8F9E257190A600CFA4D7 /* UIView+Extensions.swift in Sources */,
 				F40C8C182571782D00324BA2 /* HomeTabBarController.swift in Sources */,
 				F40C8C2225717B7A00324BA2 /* StatementListView.swift in Sources */,
@@ -469,7 +529,11 @@
 				F44B8FCD257203E100CFA4D7 /* LoginView.swift in Sources */,
 				F40C8C1C2571789800324BA2 /* HomeTabBarViewModel.swift in Sources */,
 				F44B8FC12571B4A600CFA4D7 /* ProfileViewController.swift in Sources */,
+				F4C3625A257234770069C46A /* StatementDetailViewModel.swift in Sources */,
+				F4C36253257234050069C46A /* StatementDetailViewController.swift in Sources */,
+				F4C36247257232F20069C46A /* AddStatementViewModel.swift in Sources */,
 				F40C8C3D25717E6500324BA2 /* UIFont+Extensions.swift in Sources */,
+				F4C36256257234180069C46A /* StatementDetailView.swift in Sources */,
 				F44B8FC9257203CB00CFA4D7 /* LoginViewController.swift in Sources */,
 				F44B8FB02571A2BD00CFA4D7 /* User.swift in Sources */,
 			);

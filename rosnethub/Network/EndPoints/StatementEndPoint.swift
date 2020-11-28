@@ -32,8 +32,4 @@ extension StatementEndPoint: EndPointType {
             return .request
         }
     }
-    
-    var headers: HTTPHeaders? {
-        return nil
-    }
 }

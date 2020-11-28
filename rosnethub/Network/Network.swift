@@ -72,8 +72,12 @@ protocol EndPointType {
 
 extension EndPointType {
     var baseURL: URL {
-        guard let url = URL(string: "http://192.168.0.101:8000/api") else { fatalError("baseURL could not be configured.")}
+        guard let url = URL(string: "http://35.204.149.56/rosseti-backend/public/api") else { fatalError("baseURL could not be configured.")}
         return url
+    }
+    
+    var headers: HTTPHeaders? {
+        return ["Authorization": "Bearer 123"] // Simulate auth
     }
 }
 
