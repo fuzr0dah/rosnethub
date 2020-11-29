@@ -9,8 +9,13 @@ import Foundation
 
 struct Statement: Codable {
     let name: String
-    let author: User
+    let author: Author?
     let projectDescription: String
     let createdAt: Int
     let upvotes: Int
+}
+
+struct Author: Codable {
+    let id: Int
+    let fIO: String
 }

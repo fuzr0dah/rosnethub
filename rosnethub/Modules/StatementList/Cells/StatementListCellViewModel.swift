@@ -20,12 +20,13 @@ final class StatementListCellViewModel: BaseCellViewModel {
         self.statement = statement
         super.init()
         
-        title.accept(statement.name)
-        subtitle.accept("\(statement.author.surname) \(statement.author.surname) • \(statement.createdAt.timestampToString())")
-        if let descData = statement.projectDescription.data(using: .utf16, allowLossyConversion: true) {
-            desc.accept(try? NSAttributedString(data: descData,
-                                                options: [.documentType: NSAttributedString.DocumentType.html],
-                                                documentAttributes: nil))
+        title.accept(statement.name.replacingOccurrences(of: "</b>", with: "").replacingOccurrences(of: "<b>", with: ""))
+        subtitle.accept("\(statement.author?.fIO ?? "Я") • \(statement.createdAt.timestampToString())")
+        if let descData = statement.projectDescription.data(using: .utf16, allowLossyConversion: true),
+           let attrStr = try? NSMutableAttributedString(data: descData,
+                                                        options: [.documentType: NSAttributedString.DocumentType.html],
+                                                        documentAttributes: nil) {
+            desc.accept(attrStr.with(font: .systemFont(ofSize: 14.0)))
         }
         likes.accept("\(statement.upvotes)")
         liked.accept(Bool.random() ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart"))

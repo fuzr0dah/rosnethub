@@ -1,18 +1,16 @@
 //
-//  StatementListViewController.swift
+//  MyStatemensViewController.swift
 //  rosnethub
 //
-//  Created by Артём Поляничев on 27.11.2020.
+//  Created by Артём Поляничев on 29.11.2020.
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 
-final class StatementListViewController: BaseViewController<StatementListView> {
+final class MyStatemensViewController: BaseViewController<MyStatementsView> {
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Главная"
+        title = "Заявления"
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -23,8 +21,8 @@ final class StatementListViewController: BaseViewController<StatementListView> {
     }
     
     override func bindViewModel() {
-        guard let viewModel = viewModel as? StatementListViewModel else { return }
-        let input = StatementListViewModel
+        guard let viewModel = viewModel as? MyStatementsViewModel else { return }
+        let input = MyStatementsViewModel
             .Input(selectionStatement: contentView.tableView.rx.modelSelected(StatementListCellViewModel.self).asDriver())
         let output = viewModel.transform(input)
         

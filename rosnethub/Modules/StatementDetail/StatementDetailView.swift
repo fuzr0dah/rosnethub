@@ -11,6 +11,9 @@ final class StatementDetailView: BaseView {
     
     // MARK: - Properties
     
+    let scrollView = UIScrollView()
+    let containerView = UIView()
+    
     let titleLabel: UILabel = {
         let view = UILabel()
         view.font = .bold(ofSize: 16.0)
@@ -36,7 +39,17 @@ final class StatementDetailView: BaseView {
     
     override func prepareView() {
         super.prepareView()
-        addSubviews(titleLabel, subtitleLabel, descLabel)
+        addSubview(scrollView)
+        scrollView.addSubview(containerView)
+        containerView.addSubviews(titleLabel, subtitleLabel, descLabel)
+        scrollView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
+        containerView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+            make.width.equalToSuperview()
+            make.height.equalToSuperview().priority(.low)
+        }
         titleLabel.snp.makeConstraints { (make) in
             make.top.equalToSuperview().offset(10.0)
             make.left.right.equalToSuperview().inset(20.0)

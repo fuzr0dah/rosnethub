@@ -1,15 +1,15 @@
 //
-//  StatementListViewModel.swift
+//  MyStatementsViewModel.swift
 //  rosnethub
 //
-//  Created by Артём Поляничев on 27.11.2020.
+//  Created by Артём Поляничев on 29.11.2020.
 //
 
 import UIKit
 import RxSwift
 import RxCocoa
 
-final class StatementListViewModel: BaseViewModel, ViewModelType {
+final class MyStatementsViewModel: BaseViewModel, ViewModelType {
     struct Input {
         let selectionStatement: Driver<StatementListCellViewModel>
     }
@@ -24,8 +24,8 @@ final class StatementListViewModel: BaseViewModel, ViewModelType {
         
         NetworkManager
             .StatementApi
-            .getAllStatements()
-            .map({ $0.map { StatementListCellViewModel(statement: $0) } })
+            .getUser()
+            .map({ $0.statements.map { StatementListCellViewModel(statement: $0) } })
             .subscribe(onSuccess: { viewModels in
                 items.accept(viewModels)
             }).disposed(by: disposeBag)

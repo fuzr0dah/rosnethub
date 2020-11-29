@@ -9,5 +9,15 @@ import Foundation
 
 struct User: Codable {
     let name: String
-    let surname:  String
+    let surname: String
+    let userProfile: UserProfile
+    let statements: [Statement]
+}
+
+struct UserProfile: Codable {
+    let rating: Int
+    let position: String
+    let department: String
+    let phone: String
+    let experience: Int
 }

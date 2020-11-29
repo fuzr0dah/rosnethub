@@ -29,7 +29,7 @@
 		F40C8C452571802D00324BA2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C8C442571802D00324BA2 /* NetworkManager.swift */; };
 		F44B8F9E257190A600CFA4D7 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B8F9D257190A600CFA4D7 /* UIView+Extensions.swift */; };
 		F44B8FA22571925300CFA4D7 /* Rx+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B8FA12571925300CFA4D7 /* Rx+Extensions.swift */; };
-		F44B8FAC257193C800CFA4D7 /* StatementEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B8FAB257193C800CFA4D7 /* StatementEndPoint.swift */; };
+		F44B8FAC257193C800CFA4D7 /* ApiEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B8FAB257193C800CFA4D7 /* ApiEndPoint.swift */; };
 		F44B8FB02571A2BD00CFA4D7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B8FAF2571A2BD00CFA4D7 /* User.swift */; };
 		F44B8FB42571A43800CFA4D7 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B8FB32571A43800CFA4D7 /* Int+Extensions.swift */; };
 		F44B8FB92571B47A00CFA4D7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B8FB82571B47A00CFA4D7 /* ProfileView.swift */; };
@@ -52,6 +52,15 @@
 		F4C3625A257234770069C46A /* StatementDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C36259257234770069C46A /* StatementDetailViewModel.swift */; };
 		F4C3625E25723B3D0069C46A /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3625D25723B3D0069C46A /* RoundedTextField.swift */; };
 		F4C3626325723DCA0069C46A /* RoundedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3626225723DCA0069C46A /* RoundedTextView.swift */; };
+		F4FE7DDF2573323B004F3D5C /* NSMutableAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE7DDE2573323B004F3D5C /* NSMutableAttributedString+Extensions.swift */; };
+		F4FE7DE4257334B1004F3D5C /* MyStatemensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE7DE3257334B1004F3D5C /* MyStatemensViewController.swift */; };
+		F4FE7DE8257334C3004F3D5C /* MyStatementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE7DE7257334C3004F3D5C /* MyStatementsView.swift */; };
+		F4FE7DEB257334D1004F3D5C /* MyStatementsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE7DEA257334D1004F3D5C /* MyStatementsViewModel.swift */; };
+		F4FE7DF12573365B004F3D5C /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE7DEE2573365B004F3D5C /* ChatListView.swift */; };
+		F4FE7DF22573365B004F3D5C /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE7DEF2573365B004F3D5C /* ChatListViewController.swift */; };
+		F4FE7DF32573365B004F3D5C /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE7DF02573365B004F3D5C /* ChatListViewModel.swift */; };
+		F4FE7DF7257337AB004F3D5C /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE7DF6257337AB004F3D5C /* ChatListCell.swift */; };
+		F4FE7DFB25733A25004F3D5C /* ChatListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE7DFA25733A25004F3D5C /* ChatListCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,7 +90,7 @@
 		F40C8C442571802D00324BA2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		F44B8F9D257190A600CFA4D7 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		F44B8FA12571925300CFA4D7 /* Rx+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+Extensions.swift"; sourceTree = "<group>"; };
-		F44B8FAB257193C800CFA4D7 /* StatementEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementEndPoint.swift; sourceTree = "<group>"; };
+		F44B8FAB257193C800CFA4D7 /* ApiEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPoint.swift; sourceTree = "<group>"; };
 		F44B8FAF2571A2BD00CFA4D7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F44B8FB32571A43800CFA4D7 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 		F44B8FB82571B47A00CFA4D7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -104,6 +113,15 @@
 		F4C36259257234770069C46A /* StatementDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementDetailViewModel.swift; sourceTree = "<group>"; };
 		F4C3625D25723B3D0069C46A /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		F4C3626225723DCA0069C46A /* RoundedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextView.swift; sourceTree = "<group>"; };
+		F4FE7DDE2573323B004F3D5C /* NSMutableAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extensions.swift"; sourceTree = "<group>"; };
+		F4FE7DE3257334B1004F3D5C /* MyStatemensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatemensViewController.swift; sourceTree = "<group>"; };
+		F4FE7DE7257334C3004F3D5C /* MyStatementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatementsView.swift; sourceTree = "<group>"; };
+		F4FE7DEA257334D1004F3D5C /* MyStatementsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatementsViewModel.swift; sourceTree = "<group>"; };
+		F4FE7DEE2573365B004F3D5C /* ChatListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		F4FE7DEF2573365B004F3D5C /* ChatListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		F4FE7DF02573365B004F3D5C /* ChatListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
+		F4FE7DF6257337AB004F3D5C /* ChatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
+		F4FE7DFA25733A25004F3D5C /* ChatListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,9 +244,11 @@
 		F40C8BF12571714500324BA2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4FE7DED2573365B004F3D5C /* ChatList */,
 				F44B8FC7257203BE00CFA4D7 /* Login */,
 				F40C8BF52571717C00324BA2 /* HomeTabBar */,
 				F40C8BF62571719000324BA2 /* StatementList */,
+				F4FE7DE22573348B004F3D5C /* MyStatements */,
 				F4C36244257232BF0069C46A /* AddStatement */,
 				F4C362432572329F0069C46A /* StatementDetail */,
 				F44B8FB72571B42300CFA4D7 /* Profile */,
@@ -304,7 +324,7 @@
 		F44B8FAA2571936A00CFA4D7 /* EndPoints */ = {
 			isa = PBXGroup;
 			children = (
-				F44B8FAB257193C800CFA4D7 /* StatementEndPoint.swift */,
+				F44B8FAB257193C800CFA4D7 /* ApiEndPoint.swift */,
 			);
 			path = EndPoints;
 			sourceTree = "<group>";
@@ -313,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				F44B8FB32571A43800CFA4D7 /* Int+Extensions.swift */,
+				F4FE7DDE2573323B004F3D5C /* NSMutableAttributedString+Extensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -379,6 +400,36 @@
 				F4C3626225723DCA0069C46A /* RoundedTextView.swift */,
 			);
 			path = RoundedTextView;
+			sourceTree = "<group>";
+		};
+		F4FE7DE22573348B004F3D5C /* MyStatements */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE7DE3257334B1004F3D5C /* MyStatemensViewController.swift */,
+				F4FE7DE7257334C3004F3D5C /* MyStatementsView.swift */,
+				F4FE7DEA257334D1004F3D5C /* MyStatementsViewModel.swift */,
+			);
+			path = MyStatements;
+			sourceTree = "<group>";
+		};
+		F4FE7DED2573365B004F3D5C /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE7DF525733788004F3D5C /* Cells */,
+				F4FE7DEF2573365B004F3D5C /* ChatListViewController.swift */,
+				F4FE7DEE2573365B004F3D5C /* ChatListView.swift */,
+				F4FE7DF02573365B004F3D5C /* ChatListViewModel.swift */,
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
+		F4FE7DF525733788004F3D5C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE7DFA25733A25004F3D5C /* ChatListCellViewModel.swift */,
+				F4FE7DF6257337AB004F3D5C /* ChatListCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -501,6 +552,7 @@
 			files = (
 				F40C8C1F25717B6F00324BA2 /* StatementListViewModel.swift in Sources */,
 				F44B8FD325720D4400CFA4D7 /* TextFieldWithInsets.swift in Sources */,
+				F4FE7DE4257334B1004F3D5C /* MyStatemensViewController.swift in Sources */,
 				F406272D25716841005BB11D /* AppDelegate.swift in Sources */,
 				F40C8C422571801900324BA2 /* Network.swift in Sources */,
 				F40C8BF82571738900324BA2 /* BaseViewController.swift in Sources */,
@@ -508,26 +560,33 @@
 				F40C8C2E25717C9A00324BA2 /* BaseCellViewModel.swift in Sources */,
 				F4C3625E25723B3D0069C46A /* RoundedTextField.swift in Sources */,
 				F4C3624A257232FE0069C46A /* AddStatementView.swift in Sources */,
+				F4FE7DF12573365B004F3D5C /* ChatListView.swift in Sources */,
 				F4C3626325723DCA0069C46A /* RoundedTextView.swift in Sources */,
 				F44B8FBD2571B48F00CFA4D7 /* ProfileViewModel.swift in Sources */,
 				F40C8C122571742F00324BA2 /* BaseViewModel.swift in Sources */,
 				F44B8FB42571A43800CFA4D7 /* Int+Extensions.swift in Sources */,
+				F4FE7DF22573365B004F3D5C /* ChatListViewController.swift in Sources */,
 				F40C8C152571745400324BA2 /* BaseView.swift in Sources */,
 				F40C8C3925717D9700324BA2 /* Statement.swift in Sources */,
 				F40C8C2525717B8800324BA2 /* StatementListViewController.swift in Sources */,
 				F40C8C452571802D00324BA2 /* NetworkManager.swift in Sources */,
+				F4FE7DE8257334C3004F3D5C /* MyStatementsView.swift in Sources */,
 				F40C8C3625717D5C00324BA2 /* StatementListCellViewModel.swift in Sources */,
 				F4C3624D257233110069C46A /* AddStatementViewController.swift in Sources */,
 				F44B8F9E257190A600CFA4D7 /* UIView+Extensions.swift in Sources */,
 				F40C8C182571782D00324BA2 /* HomeTabBarController.swift in Sources */,
 				F40C8C2225717B7A00324BA2 /* StatementListView.swift in Sources */,
+				F4FE7DF32573365B004F3D5C /* ChatListViewModel.swift in Sources */,
 				F40C8C2A25717C6E00324BA2 /* BaseTableViewCell.swift in Sources */,
 				F44B8FB92571B47A00CFA4D7 /* ProfileView.swift in Sources */,
-				F44B8FAC257193C800CFA4D7 /* StatementEndPoint.swift in Sources */,
+				F44B8FAC257193C800CFA4D7 /* ApiEndPoint.swift in Sources */,
+				F4FE7DF7257337AB004F3D5C /* ChatListCell.swift in Sources */,
 				F44B8FD02572043A00CFA4D7 /* LoginViewModel.swift in Sources */,
+				F4FE7DDF2573323B004F3D5C /* NSMutableAttributedString+Extensions.swift in Sources */,
 				F44B8FA22571925300CFA4D7 /* Rx+Extensions.swift in Sources */,
 				F44B8FCD257203E100CFA4D7 /* LoginView.swift in Sources */,
 				F40C8C1C2571789800324BA2 /* HomeTabBarViewModel.swift in Sources */,
+				F4FE7DFB25733A25004F3D5C /* ChatListCellViewModel.swift in Sources */,
 				F44B8FC12571B4A600CFA4D7 /* ProfileViewController.swift in Sources */,
 				F4C3625A257234770069C46A /* StatementDetailViewModel.swift in Sources */,
 				F4C36253257234050069C46A /* StatementDetailViewController.swift in Sources */,
@@ -536,6 +595,7 @@
 				F4C36256257234180069C46A /* StatementDetailView.swift in Sources */,
 				F44B8FC9257203CB00CFA4D7 /* LoginViewController.swift in Sources */,
 				F44B8FB02571A2BD00CFA4D7 /* User.swift in Sources */,
+				F4FE7DEB257334D1004F3D5C /* MyStatementsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

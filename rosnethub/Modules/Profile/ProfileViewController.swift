@@ -13,8 +13,4 @@ final class ProfileViewController: BaseViewController<ProfileView> {
         super.viewDidLoad()
         title = "Профиль"
     }
-    
-    override func bindViewModel() {
-        
-    }
 }

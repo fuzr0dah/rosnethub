@@ -111,6 +111,7 @@ final class NetworkRouter<EndPoint: EndPointType> {
                         let decodedData = try JSONDecoder().decode(type, from: data)
                         single(.success(decodedData))
                     } catch {
+                        print(error)
                         single(.failure(ResponseDecoderError.failDecode))
                     }
                 }

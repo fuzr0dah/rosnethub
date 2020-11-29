@@ -9,10 +9,14 @@ import RxSwift
 
 extension NetworkManager {
     struct StatementApi {
-        private static let router = NetworkRouter<StatementEndPoint>()
+        private static let router = NetworkRouter<ApiEndPoint>()
         
-        static func getStatements() -> Single<[Statement]> {
+        static func getAllStatements() -> Single<[Statement]> {
             return router.request(.getStatements, type: [Statement].self)
+        }
+        
+        static func getUser() -> Single<User> {
+            return router.request(.getUser, type: User.self)
         }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  StatementEndPoint.swift
+//  ApiEndPoint.swift
 //  rosnethub
 //
 //  Created by Артём Поляничев on 27.11.2020.
@@ -7,29 +7,26 @@
 
 import Foundation
 
-enum StatementEndPoint {
+enum ApiEndPoint {
     case getStatements
+    case getUser
 }
 
-extension StatementEndPoint: EndPointType {
+extension ApiEndPoint: EndPointType {
     var path: String {
         switch self {
         case .getStatements:
             return "statements"
+        case .getUser:
+            return "users/1"
         }
     }
     
     var httpMethod: HTTPMethod {
-        switch self {
-        case .getStatements:
-            return .get
-        }
+        return .get
     }
     
     var task: HTTPTask {
-        switch self {
-        case .getStatements:
-            return .request
-        }
+        return .request
     }
 }
